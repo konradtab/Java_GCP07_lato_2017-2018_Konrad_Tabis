@@ -1,1 +1,20 @@
 harmonogram
+1.menu logowania i rejestracji
+2.menu główne
+3.plansza
+4.dodawanie statków
+5.losowe dodawanie statków
+6.grafiki
+7.okno rozgrywki 
+8.okno czatu
+9.przełączanie treści w jednym oknie
+10.baza danych z uzytkownikami
+11.gra z komputerem
+12.wątki dla czatu i gry
+13.połącznie dla dwóch użytkowników dla gry
+14.połącznie dla dwóch użytkowników dla czatu
+15.pisanie i czytanie wiadomości
+16.blokada czatu
+
+//niektóre punkty prawdopodobnie zostaną rozbudowane na więcej zadań w trakcie pisania projektu. 
+//powód: uczę się dopiero i nie wiem ile czasu będę musiał poświęcić na niektóre funkcje.
