@@ -14,7 +14,6 @@ public class Program {
         central.addIterationList(iteration -> System.out.println("\nIteration " + iteration));
         central.addStudentAddList(stud -> {for(Logger el:loggers)el.log("Add",stud);});
         central.addStudentDelList(stud -> {for(Logger el:loggers)el.log("Delete",stud);});
-        central.addStudentNomodList(stud -> {for(Logger el:loggers)el.log("Not modified",stud);});
         central.run();
     }
 }
