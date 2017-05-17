@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="7.0" prefHeight="25.0" prefWidth="502.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Program">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu fx:id="menuAbout" mnemonicParsing="false" text="" />
+        </menus>
+      </MenuBar>
+      <TabPane layoutY="25.0" prefHeight="475.0" prefWidth="502.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <tabs>
+          <Tab closable="false" text="Students">
+               <content>
+                   <fx:include fx:id="student" source="tabs/students.fxml" />
+               </content></Tab>
+          <Tab closable="false" text="Logs">
+               <content>
+                   <fx:include fx:id="logs" source="tabs/logs.fxml" />
+               </content></Tab>
+          <Tab closable="false" text="Histogram">
+               <content>
+                   <fx:include fx:id="histogram" source="tabs/histogram.fxml" />
+               </content></Tab>
+           <Tab closable="false" text="Storage">
+                <content>
+                    <fx:include fx:id="storage" source="tabs/storage.fxml" />
+                </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

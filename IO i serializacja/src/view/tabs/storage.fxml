@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.tabs.StorageController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldImage" prefHeight="25.0" prefWidth="200.0" promptText="image source" />
+                  <Button fx:id="buttonAddImage" mnemonicParsing="false" onAction="#addImage" prefHeight="25.0" prefWidth="100.0" text="Add image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldLoadImage" prefHeight="25.0" prefWidth="200.0" promptText="image number" />
+                  <Button fx:id="buttonLoadImage" mnemonicParsing="false" onAction="#loadImage" prefHeight="25.0" prefWidth="100.0" text="Load image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldDeleteImage" prefHeight="25.0" prefWidth="200.0" promptText="image number" />
+                  <Button fx:id="buttonDeleteImage" mnemonicParsing="false" onAction="#deleteImage" prefHeight="25.0" prefWidth="100.0" text="Delete image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
